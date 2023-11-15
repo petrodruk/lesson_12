@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:600&display=swap);
+@import url(reset.css);
+body {
+    font-size: 18px;
+    color: #fff;
+    font-family: Arial;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+.container {
+    max-width: 1000px;
+}
+.container-team,
+container-footer {
+    max-width: 1250px;
+}
+[class*="container"] {
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+/* ---------------header----------- */
+.header {
+    padding-top: 15px;
+}
+.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: rgb(176, 170, 170);
+    opacity: 0.9;
+}
+.header__logo {
+    margin-right: 50px;
+}
+.menu-header {
+    display: inline-block;
+}
+.menu-header__item {
+    display: inline-block;
+    position: relative;
+}
+.menu-header__item:not(:last-child) {
+    margin-right: 20px;
+}
+.menu-header__item:hover .sub-menu {
+    visibility: visible;
+}
+.menu-header__item {
+    padding-bottom: 5px;
+}
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70px;
+    background-color: #7d7d7d;
+    visibility: hidden;
+}
+.sub-menu__item {
+    position: relative;
+}
+.sub-menu__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.sub-menu__link:hover,
+.video-menu__link:hover {
+    text-decoration: underline;
+}
+.sub-menu__item:hover .video-menu {
+    visibility: visible;
+}
+.video-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 120px;
+    background-color: #282525;
+    visibility: hidden;
+}
+.video-menu__item:not(:last-child) {
+    margin-bottom: 5px;
+}
+/* -------------discover------------ */
+.page__discover {
+    position: relative;
+}
+.discover__content {
+    position: relative;
+    z-index: 2;
+    padding: 180px 0px 250px 0px;
+}
+.discover__title {
+    font-size: 32px;
+    line-height: 1.4;
+    max-width: 600px;
+}
+.discover__title:not(:last-child) {
+    margin-bottom: 30px;
+}
+.discover__text {
+    max-width: 800px;
+    line-height: 1.2;
+}
+.discover__text:not(:last-child) {
+    margin-bottom: 50px;
+}
+.discover__buttons {
+    font-size: 0px;
+}
+.button-discover__link {
+    font-size: 18px;
+    background-color: rgba(0, 0, 255, 0.697);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+.button-discover__link:not(:last-of-type) {
+    margin-right: 20px;
+}
+.button-discover__link:hover {
+    background-color: rgba(0, 0, 255, 0.697);
+    opacity: 0.5;
+}
+.discover__full-screen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ---------------cards--------- */
+.cards {
+    color: #000;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+.cards__items {
+    font-size: 0px;
+}
+.cards__item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 300px;
+    min-height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    padding: 20px 30px;
+    position: relative;
+}
+.cards__item:not(:last-child) {
+    margin-right: 30px;
+}
+.cards__item:nth-child(1) {
+    padding: 20px 40px;
+}
+.item-card__title {
+    font-size: 28px;
+    font-weight: 500;
+    max-width: 300px;
+}
+.item-card__title:not(:last-child) {
+    margin-bottom: 20px;
+}
+.item-card__text {
+    font-size: 18px;
+}
+.item-card__text:not(:last-child) {
+    margin-bottom: 30px;
+}
+.item-card__link {
+    font-size: 16px;
+    color: blue;
+}
+/* -------------trip---------- */
+.trip {
+    color: #000;
+    margin-bottom: 100px;
+}
+.trip__container {
+    font-size: 0px;
+}
+.trip__image {
+    position: sticky;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    max-width: 500px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.trip__image img {
+    max-width: 100%;
+}
+.trip__content {
+    display: inline-block;
+}
+.trip__title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+.trip__title:not(:last-child) {
+    margin-bottom: 30px;
+}
+.trip__text {
+    font-size: 18px;
+    max-width: 450px;
+}
+/* ---------------team-------------- */
+.team {
+    margin-bottom: 50px;
+}
+.team__cards {
+    font-size: 0px;
+}
+.team__card {
+    max-width: 386px;
+    height: 532px;
+    display: inline-block;
+}
+.team__card:not(:last-child) {
+    margin: 0px 20px 20px 0px;
+}
+.card-team__image {
+    position: relative;
+}
+.card-team__image img {
+    max-width: 100%;
+}
+.card-team__socials {
+    position: absolute;
+    top: 241px;
+    left: 107.5px;
+    width: 181px;
+    height: 50px;
+    z-index: 2;
+    visibility: hidden;
+}
+.social-card__link img {
+    max-width: 50px;
+}
+.card-team__image:hover .card-team__socials {
+    visibility: visible;
+}
+.card-team__background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 119, 229, 0.7);
+    visibility: hidden;
+}
+.card-team__image:hover .card-team__background::before {
+    visibility: visible;
+}
+.social-card__link {
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-card__link:not(:last-child) {
+    margin-right: 13px;
+}
+.card-team__content {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    padding: 24px 10px;
+    width: 314px;
+    min-height: 114px;
+    z-index: 2;
+    background-color: #fff;
+    text-align: center;
+}
+.card-team__title {
+    color: #37393f;
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 600;
+}
+.card-team__title:not(:last-child) {
+    margin-bottom: 10px;
+}
+.card-team__text {
+    color: #7d7d7d;
+    font-family: "Inter";
+    font-size: 18px;
+}
+/* ----------------footer---------- */
+.footer {
+    background-color: #37393f;
+}
+.footer__title {
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 32px;
+}
